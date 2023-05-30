@@ -1,8 +1,8 @@
 class Fastgron < Formula
   desc "High-performance JSON to GRON converter"
   homepage "https://github.com/adamritter/fastgron"
-  url "https://github.com/adamritter/fastgron/archive/refs/tags/v0.4.1.tar.gz"
-  sha256 "a679f483a2b7574ebba9c9ce4296ab285a5a9be0dabe694be388f05518477772"
+  url "https://github.com/adamritter/fastgron/archive/refs/tags/v0.4.3.tar.gz"
+  sha256 "cf5eec165af85fd6fcff36cb32564b147ae09605dc25317bd32f5ed064079b9f"
   license "MIT"
 
   depends_on "cmake" => :build
