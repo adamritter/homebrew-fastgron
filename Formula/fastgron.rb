@@ -7,7 +7,7 @@ class Fastgron < Formula
 
   depends_on "cmake" => :build
   depends_on "ca-certificates"
-  depends_on "curl"
+  uses_from_macos "curl"
   depends_on "libnghttp2"
   depends_on "openssl@1.1"
 
@@ -18,7 +18,7 @@ class Fastgron < Formula
   end
 
   test do
-    assert_match "fastgron", shell_output("#{bin}/fastgron --version")
+    assert_match "fastgron", shell_output("#{bin}/fastgron --version 2>&1")
     assert_match "json[1] = 4;", shell_output("echo '[3,4,5]' | #{bin}/fastgron")
   end
 end
